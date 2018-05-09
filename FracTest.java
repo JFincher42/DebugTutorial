@@ -3,19 +3,14 @@ public class FracTest{
         Fraction first = new Fraction(2,3);
         Fraction second = new Fraction(3,4);
 
-        System.out.println("First: \n");
-        System.out.println(first);
-
-        System.out.println("\nSecond: \n");
-        System.out.println(second);
-
+        System.out.println("First : " + first);
+        System.out.println("Second: " + second);
+        System.out.println();
+        
         first.add(second);
 
-        System.out.println("First: \n");
-        System.out.println(first);
-
-        System.out.println("\nSecond: \n");
-        System.out.println(second);
+        System.out.println("First : " + first);
+        System.out.println("Second: " + second);
 
     }
 }

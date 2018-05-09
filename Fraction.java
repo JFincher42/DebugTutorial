@@ -16,7 +16,7 @@ public class Fraction{
 
     public Fraction(int num, int den) throws IllegalArgumentException {
         if (den==0){
-            throw IllegalArgumentException;
+            throw new IllegalArgumentException("Denominator cannot be zero (0).");
         }
         this.num = num;
         this.den = den;
@@ -41,14 +41,15 @@ public class Fraction{
 
     public void setDenominator(int den) throws IllegalArgumentException{
         if (den==0)
-            throw IllegalArgumentException;
+            throw new IllegalArgumentException("Denominator cannot be zero (0).");
         this.den = den;
     }
 
     public String toString(){
-        int digits = String.valueOf(this.num).length();
-        String separator = "----------------".substring(0,digits);
-        return "" + this.num + "\n" + separator + "\n" + this.den;
+//        int digits = String.valueOf(this.num).length();
+//        String separator = "----------------".substring(0,digits);
+//        return "" + this.num + "\n" + separator + "\n" + this.den;
+    	return "" + this.num + "/" + this.den;
     }
 
     public void add(Fraction other){
