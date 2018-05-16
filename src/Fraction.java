@@ -46,15 +46,21 @@ public class Fraction{
     }
 
     public String toString(){
-//        int digits = String.valueOf(this.num).length();
-//        String separator = "----------------".substring(0,digits);
-//        return "" + this.num + "\n" + separator + "\n" + this.den;
     	return "" + this.num + "/" + this.den;
     }
 
     public void add(Fraction other){
         this.num += other.getNumerator();
         this.den += other.getDenominator();
+    }
+    
+    public void subtract(Fraction other){
+        this.num -= other.getNumerator();
+        this.den -= other.getDenominator();
+    }
+    
+    public double value() {
+    	return num/den;
     }
 
 }
